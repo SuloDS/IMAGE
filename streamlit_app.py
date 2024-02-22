@@ -46,9 +46,9 @@ def configure_sidebar() -> None:
                 scheduler = st.selectbox('Scheduler', ('DDIM', 'DPMSolverMultistep', 'HeunDiscrete',
                                                        'KarrasDPM', 'K_EULER_ANCESTRAL', 'K_EULER', 'PNDM'))
                 num_inference_steps = st.slider(
-                    "Number of denoising steps", value=50, min_value=1, max_value=500)
+                    "Número de etapas de remoção de ruído", value=50, min_value=1, max_value=500)
                 guidance_scale = st.slider(
-                    "Scale for classifier-free guidance", value=7.5, min_value=1.0, max_value=50.0, step=0.1)
+                    "Escala para orientação sem classificador", value=7.5, min_value=1.0, max_value=50.0, step=0.1)
                 prompt_strength = st.slider(
                     "Força do prompt ao usar img2img/inpaint (1.0 corresponde à destruição total das informações na imagem)", value=0.8, max_value=1.0, step=0.1)
                 refine = st.selectbox(
@@ -56,7 +56,7 @@ def configure_sidebar() -> None:
                 high_noise_frac = st.slider(
                     "Fração de ruído a ser usada para `expert_ensemble_refiner`", value=0.8, max_value=1.0, step=0.1)
             prompt = st.text_area(
-                ":orange[**Digite o prompt(use a linguagem Inglesa): comece a digitar, Shakespeare✍🏾**]",
+                ":orange[**Digite o seu prompt(De preferençia use a linguagem Inglesa), Shakespeare✍🏾**]",
                 value="An astronaut riding a rainbow unicorn, cinematic, dramatic")
             negative_prompt = st.text_area(":orange[**Desmancha-prazeres que você não quer na imagem? 🙅🏽‍♂️**]",
                                            value="the absolute worst quality, distorted features",
