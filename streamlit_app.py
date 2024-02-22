@@ -56,7 +56,7 @@ def configure_sidebar() -> None:
                 high_noise_frac = st.slider(
                     "Fração de ruído a ser usada para `expert_ensemble_refiner`", value=0.8, max_value=1.0, step=0.1)
             prompt = st.text_area(
-                ":orange[**Digite o seu prompt(De preferençia use a linguagem Inglesa), Shakespeare✍🏾**]",
+                ":orange[**Digite o seu prompt(De preferençia use a lingua Inglesa), Shakespeare✍🏾**]",
                 value="An astronaut riding a rainbow unicorn, cinematic, dramatic")
             negative_prompt = st.text_area(":orange[**Desmancha-prazeres que você não quer na imagem? 🙅🏽‍♂️**]",
                                            value="the absolute worst quality, distorted features",
