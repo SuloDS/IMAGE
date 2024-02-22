@@ -78,9 +78,9 @@ def configure_sidebar() -> None:
             ---
             Follow me on:
 
-            𝕏 → [@tonykipkemboi](https://twitter.com/tonykipkemboi)
+            Github → [SuloDS](https://github.com/SuloDS)
 
-            LinkedIn → [Tony Kipkemboi](https://www.linkedin.com/in/tonykipkemboi)
+            LinkedIn → [Claudio Sulo](https://www.linkedin.com/in/sulods/)
 
             """
         )
