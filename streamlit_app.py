@@ -71,7 +71,7 @@ def configure_sidebar() -> None:
         st.markdown(
             """
             ---
-            Follow me on:
+            Siga-me para saber mas:
 
             Github → [SuloDS](https://github.com/SuloDS)
 
