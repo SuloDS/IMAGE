@@ -36,13 +36,13 @@ def configure_sidebar() -> None:
     """
     with st.sidebar:
         with st.form("my_form"):
-            st.info("**Yo fam! Start here ↓**", icon="👋🏾")
-            with st.expander(":rainbow[**Refine your output here**]"):
+            st.info("**Ola família! Começa aqui↓**", icon="👋🏾")
+            with st.expander(":rainbow[**Defina/Altere as configuração da imagem aqui↓**]"):
                 # Advanced Settings (for the curious minds!)
-                width = st.number_input("Width of output image", value=1024)
-                height = st.number_input("Height of output image", value=1024)
+                width = st.number_input("Largura da imagem de saída", value=1024)
+                height = st.number_input("Altura da imagem de saída", value=1024)
                 num_outputs = st.slider(
-                    "Number of images to output", value=1, min_value=1, max_value=4)
+                    "Número de imagens a serem produzidas", value=1, min_value=1, max_value=4)
                 scheduler = st.selectbox('Scheduler', ('DDIM', 'DPMSolverMultistep', 'HeunDiscrete',
                                                        'KarrasDPM', 'K_EULER_ANCESTRAL', 'K_EULER', 'PNDM'))
                 num_inference_steps = st.slider(
@@ -50,15 +50,15 @@ def configure_sidebar() -> None:
                 guidance_scale = st.slider(
                     "Scale for classifier-free guidance", value=7.5, min_value=1.0, max_value=50.0, step=0.1)
                 prompt_strength = st.slider(
-                    "Prompt strength when using img2img/inpaint(1.0 corresponds to full destruction of infomation in image)", value=0.8, max_value=1.0, step=0.1)
+                    "Força do prompt ao usar img2img/inpaint (1.0 corresponde à destruição total das informações na imagem)", value=0.8, max_value=1.0, step=0.1)
                 refine = st.selectbox(
-                    "Select refine style to use (left out the other 2)", ("expert_ensemble_refiner", "None"))
+                    "Selecione o estilo refinado a ser usado (deixe os outros 2 de fora)", ("expert_ensemble_refiner", "None"))
                 high_noise_frac = st.slider(
-                    "Fraction of noise to use for `expert_ensemble_refiner`", value=0.8, max_value=1.0, step=0.1)
+                    "Fração de ruído a ser usada para `expert_ensemble_refiner`", value=0.8, max_value=1.0, step=0.1)
             prompt = st.text_area(
-                ":orange[**Enter prompt: start typing, Shakespeare ✍🏾**]",
+                ":orange[**Digite o prompt(use a linguagem Inglesa): comece a digitar, Shakespeare✍🏾**]",
                 value="An astronaut riding a rainbow unicorn, cinematic, dramatic")
-            negative_prompt = st.text_area(":orange[**Party poopers you don't want in image? 🙅🏽‍♂️**]",
+            negative_prompt = st.text_area(":orange[**Desmancha-prazeres que você não quer na imagem? 🙅🏽‍♂️**]",
                                            value="the absolute worst quality, distorted features",
                                            help="This is a negative prompt, basically type what you don't want to see in the generated image")
 
