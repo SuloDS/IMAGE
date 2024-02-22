@@ -68,11 +68,7 @@ def configure_sidebar() -> None:
 
         # Credits and resources
         st.divider()
-        st.markdown(
-            ":orange[**Resources:**]  \n"
-            f"<img src='{replicate_logo}' style='height: 1em'> [{replicate_text}]({replicate_link})",
-            unsafe_allow_html=True
-        )
+
         st.markdown(
             """
             ---
