@@ -193,7 +193,7 @@ def main_page(submitted: bool, width: int, height: int, num_outputs: int,
                       "Um grupo de amigos rindo e dançando em um festival de música, atmosfera alegre, fotografia de filme 35mm",
                       "Um mago lançando um feitiço, intensa energia mágica brilhando em suas mãos, ilustração de fantasia extremamente detalhada",
                       "Um cachorrinho fofo brincando em um campo de flores, profundidade de campo rasa, fotografia Canon",
-                      "Uma mãe chita amamenta seus filhotes na grama alta do Serengeti. O sol da manhã brilha através da grama. Fotografia da National Geographic por Frans Lanting",
+                      "Uma mãe chita amamenta seus filhotes na grama alta do Serengeti. O sol da manhã brilha através da grama.",
                       "Aretrato de close-up de um guerreiro viking barbudo em um capacete com chifres. Ele olha intensamente para longe enquanto segura um machado de batalha. Iluminação ambiente dramática, pintura a óleo digital",
                       ],
             use_container_width=True
