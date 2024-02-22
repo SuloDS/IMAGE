@@ -67,7 +67,6 @@ def configure_sidebar() -> None:
                 "Submit", type="primary", use_container_width=True)
 
         # Credits and resources
-        st.divider()
 
         st.markdown(
             """
