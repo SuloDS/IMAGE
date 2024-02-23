@@ -13,7 +13,7 @@ st.set_page_config(page_title="Replicate Image Generator",
                    page_icon=":bridge_at_night:",
                    layout="wide")
 icon.show_icon(":foggy:")
-st.markdown("# :rainbow[Transforme sua imaginação em arte!]")
+st.markdown("# :rainbow[Transforme a sua imaginação em arte!]")
 
 # API Tokens and endpoints from `.streamlit/secrets.toml` file
 REPLICATE_API_TOKEN = st.secrets["REPLICATE_API_TOKEN"]
