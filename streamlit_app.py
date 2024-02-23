@@ -209,6 +209,5 @@ def main():
               guidance_scale, prompt_strength, refine, high_noise_frac, prompt, negative_prompt)
 
 
-
 if __name__ == "__main__":
     main()
