@@ -183,7 +183,7 @@ def main_page(submitted: bool, width: int, height: int, num_outputs: int,
             images=[
                 "gallery/farmer_sunset.png", "gallery/astro_on_unicorn.png",
                 "gallery/friends.png", "gallery/wizard.png", "gallery/puppy.png",
-                "gallery/cheetah.png", "gallery/viking.png",
+                "gallery/cheetah.png", 
             ],
             captions=["Um fazendeiro cultivando uma fazenda com um trator durante o pôr do sol, cinematográfico, dramático",
                       "Um astronauta montando um unicórnio arco-íris, cinematográfico e dramático",
@@ -191,7 +191,6 @@ def main_page(submitted: bool, width: int, height: int, num_outputs: int,
                       "Um mago lançando um feitiço, intensa energia mágica brilhando em suas mãos, ilustração de fantasia extremamente detalhada",
                       "Um cachorrinho fofo brincando em um campo de flores, profundidade de campo rasa, fotografia Canon",
                       "Uma mãe chita amamenta seus filhotes na grama alta do Serengeti. O sol da manhã brilha através da grama.",
-                      "Aretrato de close-up de um guerreiro viking barbudo em um capacete com chifres. Ele olha intensamente para longe enquanto segura um machado de batalha. Iluminação ambiente dramática, pintura a óleo digital",
                       ],
             use_container_width=True
         )
