@@ -209,12 +209,6 @@ def main():
               guidance_scale, prompt_strength, refine, high_noise_frac, prompt, negative_prompt)
 
 
-hasClicked = card(
-  title="SuloDS",
-  text="Para saber mas sobre mim, clique!",
-  image="https://avatars.githubusercontent.com/u/109469430?v=4",
-  url="https://github.com/SuloDS"
-)
 
 if __name__ == "__main__":
     main()
