@@ -2,3 +2,4 @@ replicate
 streamlit==1.30.0
 requests
 streamlit-image-select
+streamlit_card==0.0.4
