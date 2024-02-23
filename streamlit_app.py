@@ -12,7 +12,7 @@ from streamlit_card import card
 st.set_page_config(page_title="Gerador de Imagens",
                    page_icon=":bridge_at_night:",
                    layout="wide")
-icon.show_icon(":foggy:")
+
 st.markdown("# :rainbow[Transforme a sua imaginação em arte!]")
 
 # API Tokens and endpoints from `.streamlit/secrets.toml` file
