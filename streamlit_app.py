@@ -9,7 +9,7 @@ from streamlit_card import card
 
 
 # UI configurations
-st.set_page_config(page_title="Replicate Image Generator",
+st.set_page_config(page_title="Generador de Imagens",
                    page_icon=":bridge_at_night:",
                    layout="wide")
 icon.show_icon(":foggy:")
