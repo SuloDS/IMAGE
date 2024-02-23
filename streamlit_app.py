@@ -139,7 +139,7 @@ def main_page(submitted: bool, width: int, height: int, num_outputs: int,
                             # Displaying the image
                             for image in st.session_state.generated_image:
                                 with st.container():
-                                    st.image(image, caption="Generated Image 🎈",
+                                    st.image(image, caption="Imagem Gerada 🎈",
                                              use_column_width=True)
                                     # Add image to the list
                                     all_images.append(image)
@@ -165,7 +165,7 @@ def main_page(submitted: bool, width: int, height: int, num_outputs: int,
                                         f"Failed to fetch image {i+1} from {image}. Error code: {response.status_code}", icon="🚨")
                         # Create a download button for the zip file
                         st.download_button(
-                            ":red[**Download All Images**]", data=zip_io.getvalue(), file_name="output_files.zip", mime="application/zip", use_container_width=True)
+                            ":red[**Baixar todas Imagens**]", data=zip_io.getvalue(), file_name="output_files.zip", mime="application/zip", use_container_width=True)
                 status.update(label="✅ Imagens geradas!",
                               state="complete", expanded=False)
             except Exception as e:
