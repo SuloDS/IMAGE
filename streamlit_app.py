@@ -5,7 +5,7 @@ import zipfile
 import io
 from utils import icon
 from streamlit_image_select import image_select
-from streamlit_card import card
+
 
 # UI configurations
 st.set_page_config(page_title="Replicate Image Generator",
