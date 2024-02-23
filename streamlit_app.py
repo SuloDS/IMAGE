@@ -5,6 +5,7 @@ import zipfile
 import io
 from utils import icon
 from streamlit_image_select import image_select
+from streamlit_card import card
 
 
 # UI configurations
@@ -208,6 +209,13 @@ def main():
     main_page(submitted, width, height, num_outputs, scheduler, num_inference_steps,
               guidance_scale, prompt_strength, refine, high_noise_frac, prompt, negative_prompt)
 
+
+hasClicked = card(
+  title="SuloDS",
+  text="Para saber mas sobre mim, clique!",
+  image="https://avatars.githubusercontent.com/u/109469430?v=4",
+  url="https://github.com/SuloDS"
+)
 
 if __name__ == "__main__":
     main()
